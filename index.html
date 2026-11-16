@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Veloz — assistência veicular sob demanda, transparente e segura." />
+    <title>Veloz | Assistência veicular sob demanda</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegação principal">
+        <a class="brand" href="#" data-view="inicio">
+          <span class="brand-mark">V</span>
+          <span>veloz<small>assistência na estrada</small></span>
+        </a>
+        <div class="profile-card">
+          <div class="avatar">MT</div>
+          <div><strong>Marcio Tahyra</strong><span>Plano pay-per-use</span></div>
+          <button class="icon-button" aria-label="Abrir opções">•••</button>
+        </div>
+        <nav class="main-nav">
+          <p class="nav-label">MENU PRINCIPAL</p>
+          <a class="nav-item active" href="#inicio" data-view="inicio"><span>⌂</span> Visão geral</a>
+          <a class="nav-item" href="#pedir" data-view="pedir"><span>＋</span> Pedir assistência</a>
+          <a class="nav-item" href="#historico" data-view="historico"><span>↺</span> Histórico</a>
+          <p class="nav-label nav-label-spaced">GESTÃO</p>
+          <a class="nav-item" href="#indicadores" data-view="indicadores"><span>▥</span> Indicadores</a>
+          <a class="nav-item" href="#conta" data-view="conta"><span>⚙</span> Minha conta</a>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="help-card"><span class="help-icon">?</span><div><strong>Precisa de ajuda?</strong><small>Fale com nosso suporte</small></div><span>›</span></div>
+          <p>© 2024 Veloz Tecnologia</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="mobile-brand"><span class="brand-mark">V</span><strong>veloz</strong></div>
+          <div class="topbar-actions"><span class="secure-status"><i></i> Operação segura</span><button class="notification" aria-label="Notificações">♢<b>2</b></button><button class="mobile-menu" aria-label="Abrir menu">☰</button></div>
+        </header>
+
+        <div class="page-view active" id="view-inicio">
+          <section class="welcome-row">
+            <div><p class="eyebrow">SEGUNDA-FEIRA, 18 DE NOVEMBRO DE 2024</p><h1>Boa tarde, Marcio <span>✦</span></h1><p class="muted">Tudo certo por aí? Estamos prontos caso você precise.</p></div>
+            <button class="primary-button" data-view-target="pedir"><span>＋</span> Pedir assistência</button>
+          </section>
+          <section class="metrics-grid">
+            <article class="metric-card"><div class="metric-icon blue">♧</div><div><span>Chamados este mês</span><strong>03</strong><small class="positive">↑ 20% <em>vs. mês anterior</em></small></div></article>
+            <article class="metric-card"><div class="metric-icon purple">◷</div><div><span>Tempo médio de chegada</span><strong>28 <small>min</small></strong><small class="positive">↓ 12% <em>vs. mês anterior</em></small></div></article>
+            <article class="metric-card"><div class="metric-icon orange">R$</div><div><span>Economia acumulada</span><strong>R$ 184</strong><small class="positive">↑ 8% <em>vs. mês anterior</em></small></div></article>
+            <article class="metric-card"><div class="metric-icon green">★</div><div><span>Sua avaliação média</span><strong>4,9 <small>/ 5</small></strong><small class="stars">★★★★★</small></div></article>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="panel request-panel">
+              <div class="panel-heading"><div><p class="eyebrow">COMECE AGORA</p><h2>Do que você precisa?</h2></div><span class="live-pill"><i></i> 14 prestadores online</span></div>
+              <div class="service-grid">
+                <button class="service-card" data-service="Guincho"><span class="service-icon">▰</span><strong>Guincho</strong><small>Reboque completo</small><span class="service-arrow">›</span></button>
+                <button class="service-card" data-service="Troca de pneu"><span class="service-icon">◉</span><strong>Troca de pneu</strong><small>Troca e calibragem</small><span class="service-arrow">›</span></button>
+                <button class="service-card" data-service="Bateria"><span class="service-icon">▣</span><strong>Bateria</strong><small>Carga ou substituição</small><span class="service-arrow">›</span></button>
+                <button class="service-card" data-service="Pane seca"><span class="service-icon">♨</span><strong>Pane seca</strong><small>Entrega de combustível</small><span class="service-arrow">›</span></button>
+              </div>
+              <button class="text-button" data-view-target="pedir">Ver todos os serviços <span>→</span></button>
+            </article>
+            <article class="panel activity-panel">
+              <div class="panel-heading"><div><p class="eyebrow">ÚLTIMA ATIVIDADE</p><h2>Seu chamado recente</h2></div><span class="status-badge done">Concluído</span></div>
+              <div class="activity-main"><div class="activity-symbol">✓</div><div><strong>Troca de pneu</strong><span>12 nov. 2024 · Av. Paulista, 1000</span><small>Atendido por <b>Rafael Souza</b></small></div><strong class="price">R$ 79,90</strong></div>
+              <div class="rating-row"><span>Sua avaliação</span><span class="rating-stars">★★★★★</span><span class="rating-note">Excelente atendimento</span></div>
+              <button class="outline-button" data-view-target="historico">Ver detalhes do chamado <span>→</span></button>
+            </article>
+          </section>
+
+          <section class="bottom-grid">
+            <article class="panel trust-panel"><div class="panel-heading"><div><p class="eyebrow">POR QUE A VELOZ?</p><h2>Assistência sem surpresas</h2></div></div><div class="trust-list"><div><span>✓</span><p><strong>Preço antes de confirmar</strong><small>Você sempre sabe quanto vai pagar.</small></p></div><div><span>⌁</span><p><strong>Acompanhe em tempo real</strong><small>Veja o prestador chegando até você.</small></p></div><div><span>♢</span><p><strong>Prestadores verificados</strong><small>Profissionais avaliados pela comunidade.</small></p></div></div></article>
+            <article class="panel impact-panel"><p class="eyebrow">IMPACTO DA COMUNIDADE</p><div class="impact-number">1.248 <small>motoristas ajudados</small></div><div class="impact-bar"><span></span></div><div class="impact-footer"><span>Meta mensal <b>1.500</b></span><span>83%</span></div></article>
+          </section>
+        </div>
+
+        <div class="page-view" id="view-pedir">
+          <section class="view-heading"><div><p class="eyebrow">ASSISTÊNCIA SOB DEMANDA</p><h1>Peça ajuda em poucos passos</h1><p class="muted">Encontre um profissional próximo, com preço e ETA transparentes.</p></div><span class="live-pill"><i></i> Rede ativa agora</span></section>
+          <div class="request-layout">
+            <section class="panel form-panel">
+              <div class="stepper"><span class="step active"><b>1</b> Serviço</span><i></i><span class="step"><b>2</b> Localização</span><i></i><span class="step"><b>3</b> Confirmar</span></div>
+              <div class="form-step active" data-step="1"><h2>Qual problema você está enfrentando?</h2><p class="muted">Selecione o serviço que precisa agora.</p><div class="service-grid large"><button class="service-card selectable selected" data-service="Guincho"><span class="service-icon">▰</span><strong>Guincho</strong><small>Reboque completo</small><span class="check">✓</span></button><button class="service-card selectable" data-service="Troca de pneu"><span class="service-icon">◉</span><strong>Troca de pneu</strong><small>Troca e calibragem</small><span class="check">✓</span></button><button class="service-card selectable" data-service="Bateria"><span class="service-icon">▣</span><strong>Bateria</strong><small>Carga ou substituição</small><span class="check">✓</span></button><button class="service-card selectable" data-service="Pane seca"><span class="service-icon">♨</span><strong>Pane seca</strong><small>Entrega de combustível</small><span class="check">✓</span></button></div><button class="primary-button next-step">Continuar <span>→</span></button></div>
+              <div class="form-step" data-step="2"><h2>Onde você está?</h2><p class="muted">Informe o ponto de encontro para calcular o ETA.</p><label class="field-label" for="origin">Localização atual</label><div class="input-with-icon"><span>⌖</span><input id="origin" value="Av. Paulista, 1000 — Bela Vista, São Paulo" /><button id="locate">Usar localização</button></div><label class="field-label" for="destination">Destino (opcional)</label><div class="input-with-icon"><span>⌁</span><input id="destination" placeholder="Para onde você precisa ir?" /></div><div class="notice"><span>✦</span><p><strong>14 prestadores encontrados</strong><br/>A uma distância média de 2,8 km do local.</p></div><div class="step-actions"><button class="outline-button prev-step">← Voltar</button><button class="primary-button next-step">Ver estimativa <span>→</span></button></div></div>
+              <div class="form-step" data-step="3"><div class="confirm-icon">✓</div><h2>Tudo pronto para confirmar</h2><p class="muted">Confira os detalhes antes de chamar seu prestador.</p><div class="summary-list"><div><span>Serviço</span><strong class="summary-service">Guincho</strong></div><div><span>Local</span><strong>Av. Paulista, 1000</strong></div><div><span>Forma de pagamento</span><select id="payment"><option>Cartão final 4242</option><option>Pix</option><option>Dinheiro</option></select></div><div class="summary-total"><span>Total estimado</span><strong class="summary-price">R$ 189,90</strong></div></div><div class="step-actions"><button class="outline-button prev-step">← Voltar</button><button class="primary-button confirm-request">Confirmar chamado <span>✓</span></button></div></div>
+            </section>
+            <aside class="panel estimate-panel"><p class="eyebrow">ESTIMATIVA EM TEMPO REAL</p><div class="map-preview"><span class="map-route"></span><span class="map-pin user-pin">●</span><span class="map-pin provider-pin">◆</span><div class="map-label">Você está aqui</div><div class="provider-count">14 <small>online</small></div></div><div class="estimate-row"><span>Chegada estimada</span><strong>18–25 min</strong></div><div class="estimate-row"><span>Distância média</span><strong>2,8 km</strong></div><div class="estimate-row"><span>Valor estimado</span><strong class="estimate-price">R$ 189,90</strong></div><p class="estimate-footnote">* O valor final pode variar caso o serviço mude durante o atendimento.</p></aside>
+          </div>
+        </div>
+
+        <div class="page-view" id="view-historico"><section class="view-heading"><div><p class="eyebrow">SUA JORNADA</p><h1>Histórico de chamados</h1><p class="muted">Acompanhe todos os serviços solicitados pela Veloz.</p></div><button class="outline-button" data-view-target="pedir">＋ Novo chamado</button></section><section class="panel table-panel"><div class="table-toolbar"><strong>Chamados recentes</strong><div class="filter-chip">Últimos 6 meses⌄</div></div><div class="history-row history-header"><span>Serviço</span><span>Data e local</span><span>Prestador</span><span>Valor</span><span>Status</span></div><div class="history-row"><span class="history-service"><i class="service-mini blue">◉</i><b>Troca de pneu</b></span><span>12 nov. 2024<br/><small>Av. Paulista, 1000</small></span><span>Rafael Souza<br/><small>★★★★★ 5,0</small></span><strong>R$ 79,90</strong><span class="status-badge done">Concluído</span></div><div class="history-row"><span class="history-service"><i class="service-mini purple">▰</i><b>Guincho</b></span><span>04 out. 2024<br/><small>R. Augusta, 540</small></span><span>Júlia Martins<br/><small>★★★★★ 4,8</small></span><strong>R$ 210,00</strong><span class="status-badge done">Concluído</span></div><div class="history-row"><span class="history-service"><i class="service-mini orange">▣</i><b>Bateria</b></span><span>19 ago. 2024<br/><small>Marginal Pinheiros, km 12</small></span><span>Diego Oliveira<br/><small>★★★★★ 5,0</small></span><strong>R$ 95,00</strong><span class="status-badge done">Concluído</span></div></section></div>
+
+        <div class="page-view" id="view-indicadores"><section class="view-heading"><div><p class="eyebrow">VISÃO DO NEGÓCIO</p><h1>Indicadores de impacto</h1><p class="muted">Acompanhe como a Veloz transforma a experiência na estrada.</p></div><div class="period-selector">Novembro 2024⌄</div></section><section class="metrics-grid indicator-metrics"><article class="metric-card"><div class="metric-icon blue">◉</div><div><span>Chamados realizados</span><strong>1.248</strong><small class="positive">↑ 24,6% <em>crescimento mensal</em></small></div></article><article class="metric-card"><div class="metric-icon green">R$</div><div><span>GMV movimentado</span><strong>R$ 198 mil</strong><small class="positive">↑ 18,2% <em>vs. mês anterior</em></small></div></article><article class="metric-card"><div class="metric-icon purple">♧</div><div><span>Taxa de conclusão</span><strong>96,4%</strong><small class="positive">↑ 3,1 p.p. <em>mais eficiência</em></small></div></article><article class="metric-card"><div class="metric-icon orange">↗</div><div><span>Renda gerada para prestadores</span><strong>R$ 74 mil</strong><small class="positive">↑ 21,8% <em>impacto local</em></small></div></article></section><section class="dashboard-grid indicator-bottom"><article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">DESEMPENHO</p><h2>Chamados e receita</h2></div><div class="legend"><span><i class="blue-dot"></i> Chamados</span><span><i class="green-dot"></i> GMV</span></div></div><div class="chart"><div class="chart-y"><span>200k</span><span>150k</span><span>100k</span><span>50k</span><span>0</span></div><div class="chart-area"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 600 190" preserveAspectRatio="none" aria-label="Gráfico de crescimento"><polyline class="chart-line green-line" points="0,158 100,146 200,130 300,120 400,82 500,62 600,22"></polyline><polyline class="chart-line blue-line" points="0,170 100,163 200,154 300,142 400,118 500,92 600,72"></polyline></svg><div class="chart-x"><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span><span>Out</span><span>Nov</span></div></div></div></article><article class="panel impact-detail"><p class="eyebrow">IMPACTO SOCIAL</p><h2>Mais tempo na estrada, menos espera</h2><div class="impact-stat"><strong>42 min</strong><span>tempo economizado por motorista</span></div><div class="impact-stat"><strong>+ R$ 2,4k</strong><span>renda média mensal por prestador</span></div><div class="impact-stat"><strong>4,9 / 5</strong><span>experiência média da comunidade</span></div></article></section></div>
+
+        <div class="page-view" id="view-conta"><section class="view-heading"><div><p class="eyebrow">PREFERÊNCIAS</p><h1>Minha conta</h1><p class="muted">Gerencie seus dados e formas de pagamento.</p></div></section><section class="account-grid"><article class="panel account-card"><div class="avatar large">MT</div><h2>Marcio Tahyra</h2><p class="muted">marcio@email.com</p><button class="outline-button">Editar dados</button></article><article class="panel settings-card"><div class="setting-row"><div><strong>Notificações de chamado</strong><span>Receba atualizações sobre a chegada</span></div><label class="toggle"><input type="checkbox" checked/><i></i></label></div><div class="setting-row"><div><strong>Localização em tempo real</strong><span>Compartilhe sua posição com o prestador</span></div><label class="toggle"><input type="checkbox" checked/><i></i></label></div><div class="setting-row"><div><strong>Cartões e pagamentos</strong><span>Cartão final 4242</span></div><button class="text-button">Gerenciar →</button></div></article></section></div>
+      </main>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <div class="modal-backdrop" id="tracking-modal"><div class="tracking-modal"><button class="modal-close" aria-label="Fechar">×</button><div class="tracking-check">✓</div><p class="eyebrow">CHAMADO CONFIRMADO</p><h2>Estamos procurando o melhor prestador</h2><p class="muted">Você receberá uma atualização assim que alguém aceitar. Acompanhe tudo por aqui.</p><div class="searching"><span></span><span></span><span></span></div><div class="tracking-summary"><div><span>Serviço</span><strong class="summary-service">Guincho</strong></div><div><span>ETA inicial</span><strong>18–25 min</strong></div><div><span>Estimativa</span><strong class="summary-price">R$ 189,90</strong></div></div><button class="primary-button modal-ok">Entendi</button></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
