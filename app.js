@@ -21,7 +21,14 @@ function navigate(viewName) {
     document.querySelectorAll('.form-step').forEach(step => step.classList.toggle('active', step.dataset.step === '1'));
     document.querySelectorAll('.step').forEach((step, index) => step.classList.toggle('active', index === 0));
   }
-  window.location.hash = viewName;
+  switch (viewName) {
+    case 'inicio': window.location.hash = 'inicio'; break;
+    case 'pedir': window.location.hash = 'pedir'; break;
+    case 'historico': window.location.hash = 'historico'; break;
+    case 'indicadores': window.location.hash = 'indicadores'; break;
+    case 'conta': window.location.hash = 'conta'; break;
+    default: break;
+  }
   document.querySelector('.sidebar')?.classList.remove('open');
 }
 
