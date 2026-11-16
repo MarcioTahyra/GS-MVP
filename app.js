@@ -1,5 +1,6 @@
 const state = { service: 'Guincho', step: 1 };
 const prices = { 'Guincho': 'R$ 189,90', 'Troca de pneu': 'R$ 79,90', 'Bateria': 'R$ 119,90', 'Pane seca': 'R$ 99,90' };
+const allowedViews = new Set(['inicio', 'pedir', 'historico', 'indicadores', 'conta']);
 const views = [...document.querySelectorAll('.page-view')];
 const toast = document.querySelector('.toast');
 let toastTimer;
@@ -12,6 +13,7 @@ function showToast(message) {
 }
 
 function navigate(viewName) {
+  if (!allowedViews.has(viewName)) return;
   views.forEach(view => view.classList.toggle('active', view.id === `view-${viewName}`));
   document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item.dataset.view === viewName));
   if (viewName !== 'pedir') {
