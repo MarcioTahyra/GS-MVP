@@ -82,5 +82,5 @@ document.querySelectorAll('.modal-close, .modal-ok').forEach(button => button.ad
 document.querySelector('.mobile-menu')?.addEventListener('click', () => document.querySelector('.sidebar').classList.toggle('open'));
 
 const initialView = window.location.hash.replace('#', '');
-if (initialView && document.querySelector(`#view-${initialView}`)) navigate(initialView);
+if (allowedViews.has(initialView)) navigate(initialView);
 updateEstimate();
